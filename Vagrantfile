@@ -29,7 +29,6 @@ Vagrant.configure("2") do |config|
         
         config.vm.provision :shell, :inline => pkg_cmd
     end
-    
         
     config.vm.define "mgr2" do |mgr2|
         mgr2.vm.box = "phusion/ubuntu-14.04-amd64"
